@@ -62,7 +62,7 @@ router
     const deletedSnack = await deleteSnack(req.params.id);
 
     if (deletedSnack.length === 0) {
-      res.status(404).json({ message: "Id not found" });
+      res.status(404).json({ message: "Id not found!" });
     } else {
       res.json(deletedSnack[0]);
     }
@@ -73,7 +73,7 @@ router
     const updatedSnack = await updateSnack(id, req.body);
 
     if (updatedSnack.length === 0) {
-      res.status(404).json({ message: "Id not found" });
+      res.status(404).json({ message: "Id not found!" });
     } else {
       res.json(updatedSnack);
     }
