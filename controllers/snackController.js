@@ -21,12 +21,12 @@ router
   .route("/")
   .get(async (req, res) => {
     const allSnacks = await getAllSnacks();
-
-    if (!allSnacks) {
-      res.status(500).json({ error: "Server error" });
-    } else {
-      res.json(allSnacks);
-    }
+    console.log(allSnacks);
+    // if (!allSnacks) {
+    //   res.status(500).json({ error: "Server error" });
+    // } else {
+    res.json(allSnacks);
+    // }
   })
   .post(checkName, checkIfBoolean, validateURL, async (req, res) => {
     const { name } = req.body;

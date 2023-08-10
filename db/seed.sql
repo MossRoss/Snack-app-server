@@ -1,7 +1,7 @@
 \c snack_app
 
 INSERT INTO 
-snacks (name, fiber, protein, added_sugar, is_healthy, image_url ) 
+snacks (name, fiber, protein, added_sugar, is_healthy, image_url) 
 VALUES
 ('Strawberries', 20, 10, 0, true, 'https://images.unsplash.com/photo-1464965911861-746a04b4bca6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'),
 ('Snickers', 1, 4, 30, false, 'https://images.unsplash.com/photo-1611250503393-9424f314d265?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1373&q=80'),

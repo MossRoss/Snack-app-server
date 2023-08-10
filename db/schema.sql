@@ -4,6 +4,9 @@ CREATE DATABASE snack_app;
 
 \c snack_app;
 
+DROP TABLE IF EXISTS snacks;
+
+
 CREATE TABLE snacks (
     id SERIAL PRIMARY KEY, 
     name TEXT NOT NULL,
